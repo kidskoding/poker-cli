@@ -5,10 +5,10 @@
 #include <string>
 
 struct Card {
-	char value;
+	std::string value;
 	std::string suit;
 
-	Card(char value, const std::string& suit) {
+	Card(const std::string& value, const std::string& suit) {
 		this->value = value;
 		this->suit = suit;
 	}
