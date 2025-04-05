@@ -3,14 +3,18 @@
 
 #include "card.h"
 #include "chip.h"
+#include <memory>
 #include <vector>
 
 struct Player {
-	std::vector<Card> hand;
-	std::vector<Chip> chips;
+	std::shared_ptr<std::vector<Card>> hand;
+	std::shared_ptr<std::vector<Chip>> chips;
 	std::string name;
 
-	Player();
+	Player(std::string& name) : name(name) {
+		this->hand = std::make_shared<std::vector<Card>>();
+		this->chips = std::make_shared<std::vector<Chip>>();
+	}
 };
 
 #endif // PLAYER_H
