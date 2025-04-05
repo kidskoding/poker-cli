@@ -1,5 +1,6 @@
 add_rules("mode.debug", "mode.release")
 set_languages("cxx20")
+add_requires("boost")
 
 target("poker-cli")
     set_kind("binary")
