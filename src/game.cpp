@@ -15,7 +15,7 @@ void Game::addPlayer(Player* player) {
 }
 
 void Game::initializeDeck(std::shared_ptr<Deck>& deck) {
-	for(int x = 1; x <= 5; x++) {
+	for(int x = 1; x <= 100; x++) {
         deck->shuffle();
     }
 }
