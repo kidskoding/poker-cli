@@ -1,6 +1,11 @@
 [
 {
   "directory": "/Users/anirudh/UIUC/go-mama-27/personal-projects/poker-cli",
-  "arguments": ["/Library/Developer/CommandLineTools/usr/bin/clang", "-c", "-Qunused-arguments", "-isysroot", "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++20", "-Iinclude", "-DNDEBUG", "-o", "build/.objs/poker-cli/macosx/arm64/release/src/main.cpp.o", "src/main.cpp"],
+  "arguments": ["/Library/Developer/CommandLineTools/usr/bin/clang", "-c", "-Qunused-arguments", "-isysroot", "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++20", "-Iinclude", "-I", "/Users/anirudh/.xmake/packages/b/boost/1.87.0/d16317ffa7484911a86f787cef060173/include", "-DNDEBUG", "-o", "build/.objs/server/macosx/arm64/release/src/server.cpp.o", "src/server.cpp"],
+  "file": "src/server.cpp"
+},
+{
+  "directory": "/Users/anirudh/UIUC/go-mama-27/personal-projects/poker-cli",
+  "arguments": ["/Library/Developer/CommandLineTools/usr/bin/clang", "-c", "-Qunused-arguments", "-isysroot", "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++20", "-Iinclude", "-I", "/Users/anirudh/.xmake/packages/b/boost/1.87.0/d16317ffa7484911a86f787cef060173/include", "-DNDEBUG", "-o", "build/.objs/client/macosx/arm64/release/src/main.cpp.o", "src/main.cpp"],
   "file": "src/main.cpp"
 }]

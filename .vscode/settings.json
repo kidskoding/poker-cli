@@ -1,0 +1,4 @@
+{
+    "C_Cpp.errorSquiggles": "enabled",
+    "sonarlint.pathToCompileCommands": "${workspaceFolder}/compile_commands.json",
+}

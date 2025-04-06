@@ -7,9 +7,18 @@
 #include "deck.h"
 #include "game.h"
 #include "utilities.hpp"
+#include "client.h"
 
 int main(int argc, char** argv) {
     std::cout << "poker for the cli!" << std::endl;
+    
+    try {
+        connect();
+    } catch(const std::exception& e) {
+        std::cerr << "cannot connect to server: " << e.what() << std::endl;
+        return 1;
+    }
+
     std::cout << "\nwhat is your name?" << std::endl;
     
     std::string name;
